@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.visually-hidden {
+    display: none;
+}
+li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.logo img {width: 40px;
+margin-left: 20px;}
+
+a {text-decoration: none;
+color: white;}
+
+.gnb-list {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    
+}
+
+.gnb-item a{
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+}
+
+.gnb-item a:hover {
+    color: aquamarine;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.background {
+    height: 600px;
+    background-image: url('../2022.12.14/images/back.jpeg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.front-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    color: white;
+}
+
+.front-title {
+    font-size: 36px;
+}
+
+.front-content {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.front-btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-weight: 700px;
+    border: none;
+}
+
+.top {
+margin-top: -100px;
+}
+
+.second-txt{
+    width: 500px;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #666;
+}
+
+.second-txt p {
+    margin-top: 30px;}
+
+.post-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.post-card {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 250px;
+   height: 300px;
+   text-align: center;
+   background-color: #000;
+   color: #fff; 
+   box-shadow: 5px 5px #999;
+   border-radius: 20px;
+   padding: 20px;
+   margin-right: 30px;
+}
+
+.post-card:first-child {
+    margin-left: 0;
+}
+
+.post-card:last-child {
+    margin-left: 0px;
+}
+
+.post-card-txt {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    margin-top: 120px;
+}
+
+.global-footer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+.global-footer h3 {
+color: #fff;
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-item {
+    margin-right: 20px;    
+}
+
+footer-item:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width : 1200px){
+    .background {
+        height: 500px;
+        background-image: url('../2022.12.30/images/스누피칭구들.jpeg');
+        padding: 20px 0;
+    }
+    nav, footer {
+        background-color: palevioletred;
+    }
+
+    .front-txt {
+    text-align: center;
+    height: 500px;
+    color: white;
+    padding: 20px 0;
+    
+}
+.second-txt{
+   background-color: pink;
+}
+
+.post-box {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.post-card {
+    width: 700px;
+    height: 200px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: pink;
+ }
+}
+
+@media screen and (max-width : 768px) {
+    .background {
+        height: 500px;
+        background-image: url('../2022.12.30/images/스누피칭구들.jpeg');
+    }
+    nav, footer {
+        background-color: palevioletred;
+    }
+
+    .front-txt {
+    text-align: center;
+    height: 500px;
+    color: white;
+    padding: 0;
+}
+.second-txt{
+   background-color: pink;
+   height: 130px;
+}
+
+.post-box {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    height: 200px;
+}
+
+.post-card {
+    width: 600px;
+    height: 100px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: pink;
+    font-size: 10px;
+ }
+}
+
